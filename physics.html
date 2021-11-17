@@ -13,6 +13,11 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+    <script type="text/javascript" src="config.js" defer></script>
+    <script type="text/javascript" id="MathJax-script" defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
 </head>
 
 <body>
@@ -28,7 +33,21 @@
             <section>
 
                 <h2>Physics</h2>
+                <p>
+                    \eqref{sin}は正弦関数，\eqref{cos}は余弦関数の定義です．
 
+                    \begin{align}
+                    \sin x = x-\frac{x^3}{3!}+\frac{x^5}{5!}+\cdots \label{sin} \\
+                    \cos x = 1-\frac{x^2}{2!}+\frac{x^4}{4!}+\cdots \label{cos}
+                    \end{align}
+
+                    エネルギーと質量には\(E=mc^2\)が成り立つ．
+
+                    \begin{equation}
+                    \frac{\pi}{2} = \left( \int_{0}^{\infty} \frac{\sin x}{\sqrt{x}} dx \right)^2 = \sum_{k=0}^{\infty}
+                    \frac{(2k)!}{2^{2k}(k!)^2} \frac{1}{2k+1} = \prod_{k=1}^{\infty} \frac{4k^2}{4k^2 - 1}
+                    \end{equation}
+                </p>
 
 
             </section>
