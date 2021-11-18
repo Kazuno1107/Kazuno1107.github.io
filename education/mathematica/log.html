@@ -24,7 +24,7 @@
 
         <header>
             <br />
-            <font size="5">
+            <font size="4">
                 <center><a href="../math.html">Back</a></center>
             </font>
         </header>
@@ -49,53 +49,54 @@
                     $$X_i=\log_{10}x_i$$が成り立ちます．<br>
                     問題設定として，下図のようにlog
                     scale上での2個の離散値\(X_0,X_N(X_0< X_N)\)の間を等間隔になるよう\(N\)分割し，このときに隣り合う任意の2つの離散値\(X_i,X_{i+1}(0\leq i<
-                        N)\)が，linear scaleにおいてどう対応づけられるかを考えます． <img src="figure/log_linear.png" alt="log_linear"
-                        align=middle width="80%" height="80%">
-                        <br>
-                        始めに問題設定より次の式が成り立ちます．<br>
-                        \begin{cases}
-                        X_{i+1}=X_i+\Delta X\\
-                        \Delta X \equiv \dfrac{X_N - X_0}{N} = \rm{const.}
-                        \end{cases}
-                        今，\(X_{i+1}=\log_{10}x_{i+1}\)であることを考慮すると，
-                        \begin{align*}
-                        X_{i+1}&=X_i+\dfrac{1}{N}(X_N-X_0) \\
-                        &=\log_{10}x_{i+1}
-                        \end{align*}
-                        よって，
-                        \begin{align*}
-                        x_{i+1}&=10^{X_i+(X_N-X_0)/N} \\
-                        &=10^{\log_{10}x_i+(\log_{10}x_N-\log_{10}x_0)/N} \\
-                        &=10^{\log_{10}x_i}\cdot (10^{\log_{10}x_N}\cdot 10^{\log_{10}x_0})^{1/N} \\
-                        &=x_i\cdot \Bigl(\dfrac{x_N}{x_0} \Bigr)^{\frac{1}{N}}
-                        \end{align*}
-                        が得られます．\(r\equiv (x_N/x_0 )^{1/N}\)は両端の点と分割数で決まる定数なので, \(x_{i+1}=r\cdot x_i\)
-                        と等比数列が成り立つことが示されます．
-                        以上より，linear scaleでの離散値間の幅\( \Delta x_i \)は，
-                        \begin{align*}
-                        \Delta x_i&\equiv x_{i+1}-x_i \\
-                        &= x_i\cdot \Bigl(\dfrac{x_N}{x_0} \Bigr)^{\frac{1}{N}} - x_i\\
-                        &= \Bigl\{\Bigl(\dfrac{x_N}{x_0} \Bigr)^{\frac{1}{N}}-1 \Bigr\}x_i
-                        \end{align*}
-                        で決まります．log scaleにおいて幅を一定にしている分，linear scaleでは\(x_i\)に応じて幅が変化することが分かります．
-                </h3>
-                </p>
-
-
-            </section>
-
-            <font size="5">
-                <center><a href="../math.html">Back</a></center>
-            </font>
-
+                        N)\)が，linear scaleにおいてどう対応づけられるかを考えます． <div style="text-align: center;"><img
+                            src="figure/log_linear.png" alt="log_linear" align=middle width="80%" height="80%">
         </div>
-        <!--/contents-->
+        <br>
+        始めに問題設定より次の式が成り立ちます．<br>
+        \begin{cases}
+        X_{i+1}=X_i+\Delta X\\
+        \Delta X \equiv \dfrac{X_N - X_0}{N} = \rm{const.}
+        \end{cases}
+        今，\(X_{i+1}=\log_{10}x_{i+1}\)であることを考慮すると，
+        \begin{align*}
+        X_{i+1}&=X_i+\dfrac{1}{N}(X_N-X_0) \\
+        &=\log_{10}x_{i+1}
+        \end{align*}
+        よって，
+        \begin{align*}
+        x_{i+1}&=10^{X_i+(X_N-X_0)/N} \\
+        &=10^{\log_{10}x_i+(\log_{10}x_N-\log_{10}x_0)/N} \\
+        &=10^{\log_{10}x_i}\cdot (10^{\log_{10}x_N}\cdot 10^{\log_{10}x_0})^{1/N} \\
+        &=x_i\cdot \Bigl(\dfrac{x_N}{x_0} \Bigr)^{\frac{1}{N}}
+        \end{align*}
+        が得られます．\(r\equiv (x_N/x_0 )^{1/N}\)は両端の点と分割数で決まる定数なので, \(x_{i+1}=r\cdot x_i\)
+        と等比数列が成り立つことが示されます．
+        以上より，linear scaleでの離散値間の幅\( \Delta x_i \)は，
+        \begin{align*}
+        \Delta x_i&\equiv x_{i+1}-x_i \\
+        &= x_i\cdot \Bigl(\dfrac{x_N}{x_0} \Bigr)^{\frac{1}{N}} - x_i\\
+        &= \Bigl\{\Bigl(\dfrac{x_N}{x_0} \Bigr)^{\frac{1}{N}}-1 \Bigr\}x_i
+        \end{align*}
+        で決まります．log scaleにおいて幅を一定にしている分，linear scaleでは\(x_i\)に応じて幅が変化することが分かります．
+        </h3>
+        </p>
 
-        <footer>
-            <small>Copyright&copy; <a href="index.html">2021- Y. Kazuno</a> All Rights Reserved.</small>
-            <span class="pr">《<a href="https://template-party.com/" target="_blank">Web
-                    Design:Template-Party</a>》</span>
-        </footer>
+
+        </section>
+
+        <font size="4">
+            <center><a href="../math.html">Back</a></center>
+        </font>
+
+    </div>
+    <!--/contents-->
+
+    <footer>
+        <small>Copyright&copy; <a href="index.html">2021- Y. Kazuno</a> All Rights Reserved.</small>
+        <span class="pr">《<a href="https://template-party.com/" target="_blank">Web
+                Design:Template-Party</a>》</span>
+    </footer>
 
     </div>
     <!--/container-->
